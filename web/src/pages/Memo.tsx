@@ -2,7 +2,7 @@ import { useState } from "react";
 import GroupList from "../components/memos/GroupList";
 import MemoList from "../components/memos/MemoList";
 
-export default function Memo() {
+export function Memo() {
   const [isHidden, setIsHidden] = useState(false);
   return (
     <>
@@ -14,7 +14,7 @@ export default function Memo() {
             setIsHidden(!isHidden);
           }}
         >
-          Memo Group
+          <span>Memo Group</span>
         </div>
         <div className="flex flex-col border rounded w-full flex-grow bg-red-500 p-2 gap-2">
           <MemoList />
@@ -22,4 +22,8 @@ export default function Memo() {
       </div>
     </>
   );
+}
+
+export function MemoForm() {
+  return <div>Memo Form</div>;
 }

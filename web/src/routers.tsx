@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import Memo from "./pages/Memo";
+import { Memo, MemoForm } from "./pages/Memo";
 import Home from "./pages/Home";
 
 export const router = createBrowserRouter([
@@ -10,6 +10,10 @@ export const router = createBrowserRouter([
   {
     path: "/memo",
     element: <Memo />,
+  },
+  {
+    path: "/memo/form",
+    element: <MemoForm />,
   },
   {
     path: "/task",
