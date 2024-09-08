@@ -14,6 +14,10 @@ app.onError((err, c) => {
   return Responder.fail(err?.message).build(c);
 });
 
+app.notFound((c) => {
+  return Responder.fail("Not Found").setStatusCode(404).build(c);
+});
+
 export default {
   port: 3000,
   fetch: app.fetch,
