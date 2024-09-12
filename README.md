@@ -8,5 +8,6 @@ A simple app to track your life.
 - Clock
 - Collect
 
-Backend Language: Golang
-Frontend Language: TypeScript + React
+Backend Language: Typescript + Bun.js + Hono + PostgreSQL
+
+Frontend Language: TypeScript + Vite + React + Tailwind CSS
